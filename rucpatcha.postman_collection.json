@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "43d64268-c6e0-4f46-8d0c-086454531745",
+		"name": "rucpatcha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18783092"
+	},
+	"item": [
+		{
+			"name": "http://rucaptcha.com/in.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "method",
+							"value": "post",
+							"type": "text"
+						},
+						{
+							"key": "coordinatescaptcha",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "f7348ddc01825824a938e5c1c552e293",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/agaly/Desktop/www/yandex-search/captcha_image_resized.png"
+						},
+						{
+							"key": "imginstructions",
+							"type": "file",
+							"src": "/Users/agaly/Desktop/www/yandex-search/instruction_image.png"
+						},
+						{
+							"key": "json",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://rucaptcha.com/in.php",
+					"protocol": "http",
+					"host": [
+						"rucaptcha",
+						"com"
+					],
+					"path": [
+						"in.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://rucaptcha.com/res.php?key=f7348ddc01825824a938e5c1c552e293&action=get&id=52014880781&json=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://rucaptcha.com/res.php?key=f7348ddc01825824a938e5c1c552e293&action=get&id=52014902955&json=1",
+					"protocol": "http",
+					"host": [
+						"rucaptcha",
+						"com"
+					],
+					"path": [
+						"res.php"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "f7348ddc01825824a938e5c1c552e293"
+						},
+						{
+							"key": "action",
+							"value": "get"
+						},
+						{
+							"key": "id",
+							"value": "52014902955"
+						},
+						{
+							"key": "json",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
